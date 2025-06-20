@@ -1,0 +1,12 @@
+# Example values for deploying a secure EC2 instance
+aws_region = "us-east-1"
+vpc_id     = "vpc-xxxxxxxx"
+subnet_id  = "subnet-xxxxxxxx"
+key_name   = "my-keypair"
+# iam_instance_profile = "my-ec2-role" # Optional
+allowed_ssh_cidr = "203.0.113.0/24" # Restrict SSH to your IP range
+instance_tags = {
+  Environment = "production"
+  Project     = "my-app"
+  Owner       = "devops-team"
+}
